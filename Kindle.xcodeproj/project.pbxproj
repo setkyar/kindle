@@ -12,6 +12,7 @@
 		FA80F5302191E410002B10C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA80F52F2191E410002B10C3 /* Assets.xcassets */; };
 		FA80F5332191E410002B10C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA80F5312191E410002B10C3 /* LaunchScreen.storyboard */; };
 		FA80F53B219339C3002B10C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F53A219339C3002B10C3 /* Models.swift */; };
+		FA80F53D21949C6F002B10C3 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F53C21949C6F002B10C3 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA80F5322191E410002B10C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA80F5342191E410002B10C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA80F53A219339C3002B10C3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		FA80F53C21949C6F002B10C3 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FA80F5312191E410002B10C3 /* LaunchScreen.storyboard */,
 				FA80F5342191E410002B10C3 /* Info.plist */,
 				FA80F53A219339C3002B10C3 /* Models.swift */,
+				FA80F53C21949C6F002B10C3 /* BookCell.swift */,
 			);
 			path = Kindle;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA80F53D21949C6F002B10C3 /* BookCell.swift in Sources */,
 				FA80F53B219339C3002B10C3 /* Models.swift in Sources */,
 				FA80F52B2191E40F002B10C3 /* ViewController.swift in Sources */,
 				FA80F5292191E40F002B10C3 /* AppDelegate.swift in Sources */,
