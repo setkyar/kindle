@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Kindle
-//
-//  Created by Macbook on 11/6/18.
-//  Copyright © 2018 Set Kyar Wa Lar. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UITableViewController {
@@ -21,6 +13,13 @@ class ViewController: UITableViewController {
         navigationItem.title = "Kindle"
         
         setupBooks()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let layout = UICollectionViewFlowLayout()
+        let bookPagerController = BookPagerController(collectionViewLayout: layout)
+        let navController = UINavigationController(rootViewController: bookPagerController)
+        present(navController, animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -1,11 +1,3 @@
-//
-//  Models.swift
-//  Kindle
-//
-//  Created by Macbook on 11/7/18.
-//  Copyright © 2018 Set Kyar Wa Lar. All rights reserved.
-//
-
 import UIKit
 
 class Book {

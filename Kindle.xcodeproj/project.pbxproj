@@ -13,6 +13,7 @@
 		FA80F5332191E410002B10C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA80F5312191E410002B10C3 /* LaunchScreen.storyboard */; };
 		FA80F53B219339C3002B10C3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F53A219339C3002B10C3 /* Models.swift */; };
 		FA80F53D21949C6F002B10C3 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F53C21949C6F002B10C3 /* BookCell.swift */; };
+		FADF8E9C219B31FC00123596 /* BookPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF8E9B219B31FC00123596 /* BookPagerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FA80F5342191E410002B10C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA80F53A219339C3002B10C3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		FA80F53C21949C6F002B10C3 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		FADF8E9B219B31FC00123596 /* BookPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPagerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FA80F5342191E410002B10C3 /* Info.plist */,
 				FA80F53A219339C3002B10C3 /* Models.swift */,
 				FA80F53C21949C6F002B10C3 /* BookCell.swift */,
+				FADF8E9B219B31FC00123596 /* BookPagerController.swift */,
 			);
 			path = Kindle;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA80F53D21949C6F002B10C3 /* BookCell.swift in Sources */,
+				FADF8E9C219B31FC00123596 /* BookPagerController.swift in Sources */,
 				FA80F53B219339C3002B10C3 /* Models.swift in Sources */,
 				FA80F52B2191E40F002B10C3 /* ViewController.swift in Sources */,
 				FA80F5292191E40F002B10C3 /* AppDelegate.swift in Sources */,

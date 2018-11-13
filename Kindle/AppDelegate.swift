@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Kindle
-//
-//  Created by Macbook on 11/6/18.
-//  Copyright © 2018 Set Kyar Wa Lar. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
