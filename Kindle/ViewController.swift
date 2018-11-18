@@ -11,13 +11,11 @@ class ViewController: UITableViewController {
         tableView.tableFooterView = UIView()
         
         navigationItem.title = "Kindle"
-        
-        setupBooks()
+    
         fetchBooks()
     }
     
     func fetchBooks() {
-        print("Fetching ...")
         if let url = URL(string: "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/kindle.json") {
             URLSession.shared.dataTask(with: url, completionHandler: {(data, response, error) in
                 
@@ -27,13 +25,29 @@ class ViewController: UITableViewController {
                 }
                 
                 guard let data = data else { return }
-                guard let dataAsString = String(data: data, encoding: .utf8) else { return }
                 
-                print(dataAsString)
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                    
+                    guard let bookDictionaries = json as? [[String: Any]] else { return }
+                    
+                    self.books = []
+                    for bookDictionary in bookDictionaries {
+                        if let title = bookDictionary["title"] as? String, let author = bookDictionary["author"] as? String {
+                            let book = Book(title: title, author: author, image: #imageLiteral(resourceName: "bill_gates"), pages: [])
+                            self.books?.append(book)
+                        }
+                    }
+                    
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                    
+                } catch let jsonError {
+                    print("Failed to parse JSON PropertlyL ", jsonError)
+                }
                 
             }).resume()
-            
-            print("Have we ftch our books yet?")
         }
     }
     
@@ -68,24 +82,6 @@ class ViewController: UITableViewController {
             return count
         }
         return 0
-    }
-    
-    func setupBooks(){
-        let page1 = Page(number: 1, text: "Text for the frist page")
-        let page2 = Page(number: 2, text: "Text for the second two")
-        
-        let pages = [page1, page2]
-        
-        let book = Book(title: "Steve Jobs", author: "Walter Isaacson",image: #imageLiteral(resourceName: "steve_jobs"), pages: pages)
-        
-        let book2 = Book(title: "Bill Gates: A Biography", author: "Michael Becraft", image: #imageLiteral(resourceName: "bill_gates"),pages: [
-            Page(number: 1, text: "Text for page 3"),
-            Page(number: 2, text: "Text for page 4"),
-            Page(number: 3, text: "Text for page 5"),
-            Page(number: 4, text: "Text for page 6")
-            ])
-        
-        self.books = [book, book2]
     }
 
 }
