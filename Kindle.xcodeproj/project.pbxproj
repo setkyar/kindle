@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA690DFE21A1B187008BC33D /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA690DFD21A1B187008BC33D /* PageCell.swift */; };
 		FA80F5292191E40F002B10C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F5282191E40F002B10C3 /* AppDelegate.swift */; };
 		FA80F52B2191E40F002B10C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F52A2191E40F002B10C3 /* ViewController.swift */; };
 		FA80F5302191E410002B10C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA80F52F2191E410002B10C3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA690DFD21A1B187008BC33D /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		FA80F5252191E40F002B10C3 /* Kindle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA80F5282191E40F002B10C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA80F52A2191E40F002B10C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				FA80F53A219339C3002B10C3 /* Models.swift */,
 				FA80F53C21949C6F002B10C3 /* BookCell.swift */,
 				FADF8E9B219B31FC00123596 /* BookPagerController.swift */,
+				FA690DFD21A1B187008BC33D /* PageCell.swift */,
 			);
 			path = Kindle;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				FA80F53D21949C6F002B10C3 /* BookCell.swift in Sources */,
 				FADF8E9C219B31FC00123596 /* BookPagerController.swift in Sources */,
+				FA690DFE21A1B187008BC33D /* PageCell.swift in Sources */,
 				FA80F53B219339C3002B10C3 /* Models.swift in Sources */,
 				FA80F52B2191E40F002B10C3 /* ViewController.swift in Sources */,
 				FA80F5292191E40F002B10C3 /* AppDelegate.swift in Sources */,
