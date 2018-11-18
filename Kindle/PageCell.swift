@@ -12,7 +12,7 @@ class PageCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
         addSubview(textLabel)
         
         textLabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
